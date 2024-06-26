@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    scroll-behavior: smooth;
+    font-family: 'poppins';
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+}
+
+.logo {
+    font: bold;
+    padding: 15px;
+    font-family: 'poppins';
+    font-weight: 600;
+}
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav a {
+    font-family: 'Poppins';
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+    padding: 15px;
+    font-size: smaller;
+    margin-right: 20px;
+  }
+
+.nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #000000;
+    transition: 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+.nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+.pcont {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pcont .profile img {
+    height: auto;
+    width: 400px;
+    margin-right: 100px;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.nama {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+.jenis {
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+.explain {
+    padding: 5px 10px 10px 4px;
+    display: flex;
+    margin-top: 20px;
+    text-align: justify;
+    
+}
+
+.explain p {
+    font-size: 14px;
+    
+}
+
